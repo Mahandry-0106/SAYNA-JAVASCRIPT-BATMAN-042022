@@ -1,0 +1,122 @@
+*{
+    margin: 0%;
+}
+p,h1,h3,a{
+    color: #fff;
+}
+#marron{
+    
+    background-size: cover;
+    height: auto;
+    
+}
+.ligne{
+    margin-left: 2cm;
+    margin-right: 2cm;
+    border-right: #BCBBBD solid 3px;
+    border-left: #BCBBBD solid 3px ;
+}
+/* bar de navigation */
+header{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    display: flex;
+    padding-left: 2cm;
+    border-bottom: #c4c4c4 solid 4px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    padding-left: 15cm;
+}
+a{
+    text-decoration-line: none;
+}
+a:hover{
+    text-decoration-line: underline;
+}
+li{
+    padding-left: 2cm;
+    padding-right: 2cm;
+}
+#game{
+    padding-top: 180px;
+    padding-left: 180px;
+}
+.side{
+    text-align: right;
+    justify-content: center;
+    margin-right: -4.5%;
+    scroll-behavior: var(#000);
+}
+#icon{
+    padding-right: 3%;
+}
+.esplog{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+/* section à partir du fleche */
+#noir{
+    background-color: #000;
+}
+#fleche{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#quizz{
+    padding-left: 70px;
+}
+#titre{
+    padding-bottom: 40px;
+    padding-bottom: 40px;
+}
+.option{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.choix{
+    background-color: #c4c4c4;
+    margin-top: 10px;
+    height: 30px;
+    width: 700px;
+    justify-content: center; 
+    padding-top: 6px;  
+    padding-left: 6px;
+    font-size: 20px;
+}
+#dpara{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.black{
+    background-color: #000;
+    text-align: center;
+}
+#dbtn{
+    margin-top:40px;
+    margin-left: 20px;
+    margin-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #fff;
+    background: linear-gradient(to right,rgba(255,255,255, .60),rgba(255,0,0, .40));
+    padding-bottom: 20px;
+    padding-top:20px
+    
+}
+#Dpara{
+    color: #c4c4c4;
+}
+footer{
+    padding-top: 20px;
+    background-color: black;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+#foot2{
+    padding-left: 1%;
+    padding-top: 1%;
+}

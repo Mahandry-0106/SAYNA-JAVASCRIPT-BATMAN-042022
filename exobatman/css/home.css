@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Rajdhani&family=Raleway:ital,wght@0,300;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Rajdhani&family=Raleway:ital,wght@0,300;1,200&family=Space+Grotesk:wght@400;500&display=swap');
+/* police des texres */
+h1{
+    font-family: 'Rajdhani', sans-serif;
+}
+p,h3{
+    font-family: 'Rajdhani', sans-serif;
+}
+*{
+    margin: 0%;
+}
+/* couleur des textes */
+p,h1,h3,a{
+    color: #fff;
+}
+/* bordure de la page */
+.ligne{
+    margin-left: 2cm;
+    margin-right: 2cm;
+    border-right: #BCBBBD solid 3px;
+    border-left: #BCBBBD solid 3px ;
+}
+/* partie rouge de la page */
+#red{
+    
+    backgroucd-size: cover;
+    height: auto;
+}
+/* animation qui sera appelé plus tard en js */
+.apparaitre{
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.heros,.fondre,.neige{
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
+
+.visible{
+    opacity: 1;
+    transform: translateX(0px);
+    transition: 3s cubic-bezier(.5,0,0,1);
+}
+/* bare de navigation */
+header{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    display: flex;
+    padding-left: 2cm;
+    border-bottom: #BCBBBD solid 4px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    padding-left: 15cm;
+}
+a{
+    text-decoration-line: none;
+}
+
+
+li{
+    padding-left: 2cm;
+    padding-right: 2cm;
+}
+/* generalite sur bruce */
+#identité{
+    text-align: center;
+    justify-content: center;
+    padding-top: 20%;
+    font-size: 25px;
+}
+#bat{
+    padding-top: 20px;
+} 
+
+/* bouton */
+.tblanc{
+    margin-top:40px;
+    margin-left: 20px;
+    margin-bottom: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #fff;
+    background: linear-gradient(to right,rgba(255,255,255, .60),rgba(255,0,0, .40));
+    padding-bottom: 20px;
+    padding-top:20px
+    
+}
+.tblanc:hover{
+    opacity: 40%;
+}
+.tblanc:focus{
+    opacity: 100%;
+}
+/* à partir du flèche vers le bas */
+.black{
+    background-color: black;
+}
+#fleche{
+    padding-top: 100px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.titre{
+    padding-left: 2cm;
+    padding-top: 80px;
+}
+.Lpara{
+    padding-left: 2cm;
+    font-size: 20px;
+    padding-top: 20px;
+}
+/* les icones sur le côté */
+
+.side{  
+    text-align: right;
+    justify-content: center;
+    margin-right: -4.5%;
+    margin-top: -400px;
+    
+}
+
+#icon{
+    padding-right: 3%;
+}
+/* espace entre les icones */
+.esplog{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+/* les photos de batman */
+.photo{
+    padding-top: 120px;
+    padding-bottom: 40px;
+    padding-left: 1.5cm;
+    padding-right: 1.5cm;
+    display: flex;
+    justify-content: space-around;
+}
+/* animation sur les photo de batman qui seront appelés plus tard e js */
+.zoom,.do,.re,.mi,.changer,.grow,.changer,.augmenter{
+    transform: scale(0);
+}
+.effet-zoom{
+    transform: scale(1);
+    transition: 3s;
+}
+/* partie multimedia */
+#es{
+    padding-top: 4%;
+    display: flex;
+    justify-content: space-around;
+}
+#es2{
+    height: 200px;
+    width: 550px;
+    display: flex;
+    
+}
+.pass{
+    padding-top: 5%;
+}
+#cp1{
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 10px;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+#cp2{
+    padding-left: 8px;
+    padding-right: 10px;
+    padding-top: 10px;
+    background-color: #19587d;
+    font-size: 12px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#annonce{
+    padding-top: 50px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+/* formulaire à remplir */
+#gris{
+    background-color: grey
+}
+#contact{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+}
+#tete{
+    text-align: center;
+}
+form{
+    justify-content: right;
+    padding-left: 190px;
+    padding-top: 60px;
+    padding-right: 190px;
+}
+input[type=text]{
+    background-color:grey;
+    border: grey;
+    color: #fff;
+    width: 750px;
+}
+::placeholder{
+    color: #fff;
+}
+#choice{
+    display: flex;
+}
+select{
+    background-color:gray;
+    color: #fff;
+    margin-top: 1%;
+    width: 700px;
+}
+.espace{
+    padding-top: 30px;
+}
+/* style du popub box qui doit apparaitre àpres confirmation  et sa visibilité sera appelé en js */
+.conteneur{
+    background-color: rgb(58, 56, 56) ;
+    width:600px ;
+    height: 350px;
+    align-content: center;
+    padding-top: 4%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    padding-left: 4%;
+    margin-left: 200px;
+    display:none ;
+}
+.conteneur.show{
+    display: block;
+}
+.popupbox{
+    display: flex;
+    flex-wrap: wrap;
+    width: 550px;
+    height: 300px;
+    background: linear-gradient(70deg,grey,rgb(70, 85, 70));
+    text-align: center;
+    justify-content: center;
+    border: rgb(58, 56, 56);
+    border-radius: 20px;
+    align-content: center;
+
+}
+/* les trois  boutons */
+#tribtn{
+    padding-top: 40px;
+    text-align: center; 
+}
+.btnb{
+    color: #fff;
+    background-color: grey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-left: 30px;
+    outline-color: aqua;
+    outline-style: outset ;
+}
+/* le dernier bouton de la page */
+.dbtn{
+    margin-top: 5%;
+    text-align: center;
+}
+
+/* les cuillemets de la page */
+#Gi1{
+    padding-top: 120px;
+    padding-left: 120px;
+}
+#Gi2{
+    text-align: right;
+    padding-right: 120px;
+    padding-bottom: 120px;
+}
+/* le texte entre les guillemets */
+#citation,#Dpar{
+    text-align: center;
+}
+
+.fa{
+    font-size: 12px;
+    padding-top: 1%;
+    color: #c4c4c4;
+}
+footer{
+    padding-top: 20px;
+    background-color: black;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+ #foot2{
+     padding-left: 1%;
+     padding-top: 1%;
+ }
+
+
